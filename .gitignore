@@ -1,0 +1,45 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/wrapper/maven-wrapper.jar # Maven Wrapper JAR can be ignored if not used for consistent builds
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+.nbattrs
+*.jar
+*.war
+*.ear
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+*~
+.#*
+*.bak
+*.swp
+
+step2-with-solid/target/
+Step-01-without-solid/target
