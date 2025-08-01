@@ -4,6 +4,7 @@ package org.example.services;
 
 import org.example.model.EmailMessage;
 import org.example.model.SmsMessage;
+import org.example.model.TelegramMessage;
 
 import java.util.regex.Pattern;
 
@@ -20,6 +21,12 @@ public class EmailMessageService implements MessageService{
         }else{
             throw new IllegalArgumentException("Email Address is Not Correct!");
         }
+    }
+
+    @Override
+    public void sendTelegramMessage(TelegramMessage telegramMessage) {
+        //Empty Body!
+
     }
 
     public boolean validateEmailAddress(String email) {

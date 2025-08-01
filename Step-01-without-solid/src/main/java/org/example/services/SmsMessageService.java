@@ -3,6 +3,7 @@ package org.example.services;
 
 import org.example.model.EmailMessage;
 import org.example.model.SmsMessage;
+import org.example.model.TelegramMessage;
 
 public class SmsMessageService implements MessageService{
     @Override
@@ -17,6 +18,12 @@ public class SmsMessageService implements MessageService{
     @Override
     public void sendEmailMessage(EmailMessage emailMessage) {
         //Empty Body!
+    }
+
+    @Override
+    public void sendTelegramMessage(TelegramMessage telegramMessage) {
+        //Empty Body!
+
     }
 
     private boolean validatePhoneNumber(String phoneNumber) {
