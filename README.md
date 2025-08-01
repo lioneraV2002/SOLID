@@ -9,18 +9,18 @@
 
 | #  | نام کلاس                     | نام تغییر                     | توضیحات                                                                      | اندازه |
 |----|-----------------------------|-------------------------------|------------------------------------------------------------------------------|--------|
-| 1  | Main.java                   | افزودن گزینه تلگرام به منو     | افزودن گزینه ۳ برای پیام‌های تلگرام به منو.                                   | ۲      |
-| 2  | Main.java                   | افزودن کیس سوئیچ تلگرام       | افزودن کیس ۳ برای ایجاد `TelegramMessage`، تنظیم شناسه‌ها و محتوا.             | ۲      |
-| 3  | Main.java                   | به‌روزرسانی مدیریت سرویس       | افزودن منطق برای استفاده از `TelegramMessageService` برای `TelegramMessage`.   | ۲      |
-| 4  | MessageService.java         | افزودن متد تلگرام             | افزودن متد `sendTelegramMessage` به رابط برای پشتیبانی از تلگرام.             | ۱      |
+| 1  | Main.java                   | افزودن گزینه تلگرام به منو     | افزودن گزینه ۳ برای پیام‌های تلگرام به منو.                                   | 1      |
+| 2  | Main.java                   | افزودن کیس سوئیچ تلگرام       | افزودن کیس ۳ برای ایجاد `TelegramMessage`، تنظیم شناسه‌ها و محتوا.             | 1      |
+| 3  | Main.java                   | به‌روزرسانی مدیریت سرویس       | افزودن منطق برای استفاده از `TelegramMessageService` برای `TelegramMessage`.   | 1      |
+| 4  | MessageService.java         | افزودن متد تلگرام             | افزودن متد `sendTelegramMessage` به رابط برای پشتیبانی از تلگرام.             | 1      |
 | 5  | TelegramMessage.java        | ایجاد کلاس جدید                | ایجاد `TelegramMessage` با `sourceId`، `targetId`، گترها و سترها.            | ۲      |
-| 6  | SmsMessageService.java      | افزودن متد خالی تلگرام        | افزودن متد خالی `sendTelegramMessage` برای تطابق با رابط.                    | ۱      |
-| 7  | EmailMessageService.java    | افزودن متد خالی تلگرام        | افزودن متد خالی `sendTelegramMessage` برای تطابق با رابط.                    | ۱      |
-| 8  | EmailMessageService.java    | اصلاح بیانیه چاپ              | اصلاح چاپ `sendEmailMessage` به "Sending an Email" به جای "SMS".             | ۱      |
-| 9  | EmailMessageService.java    | به‌روزرسانی اعلان‌های ایمیل    | اصلاح اعلان‌های `Main` برای ایمیل به "source email" و "target email".         | ۱      |
-| 10 | TelegramMessageService.java | ایجاد کلاس جدید                | ایجاد برای مدیریت ارسال پیام تلگرام با اعتبارسنجی شناسه.                     | ۳      |
-| 11 | TelegramMessageService.java | متدهای خالی SMS/Email         | افزودن متدهای خالی `sendSmsMessage` و `sendEmailMessage` برای تطابق رابط.   | ۱      |
-| 12 | TelegramMessageService.java | اعتبارسنجی و ارسال تلگرام     | پیاده‌سازی `validateTelegramId` برای نام‌های کاربری (@، حداقل ۵ کاراکتر) یا شماره‌های ۱۱ رقمی و چاپ بازخورد تلاش/موفقیت. | ۳      |
+| 6  | SmsMessageService.java      | افزودن متد خالی تلگرام        | افزودن متد خالی `sendTelegramMessage` برای تطابق با رابط.                    | 1      |
+| 7  | EmailMessageService.java    | افزودن متد خالی تلگرام        | افزودن متد خالی `sendTelegramMessage` برای تطابق با رابط.                    | 1      |
+| 8  | EmailMessageService.java    | اصلاح بیانیه چاپ              | اصلاح چاپ `sendEmailMessage` به "Sending an Email" به جای "SMS".             | 1      |
+| 9  | EmailMessageService.java    | به‌روزرسانی اعلان‌های ایمیل    | اصلاح اعلان‌های `Main` برای ایمیل به "source email" و "target email".         | 1      |
+| 10 | TelegramMessageService.java | ایجاد کلاس جدید                | ایجاد برای مدیریت ارسال پیام تلگرام با اعتبارسنجی شناسه.                     | 2      |
+| 11 | TelegramMessageService.java | متدهای خالی SMS/Email         | افزودن متدهای خالی `sendSmsMessage` و `sendEmailMessage` برای تطابق رابط.   | 1      |
+| 12 | TelegramMessageService.java | اعتبارسنجی و ارسال تلگرام     | پیاده‌سازی `validateTelegramId` برای نام‌های کاربری (@، حداقل ۵ کاراکتر) یا شماره‌های ۱۱ رقمی و چاپ بازخورد تلاش/موفقیت. | 2      |
 
 <br>
 
