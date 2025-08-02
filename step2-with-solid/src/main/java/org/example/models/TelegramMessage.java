@@ -1,4 +1,27 @@
 package org.example.models;
 
-public class TelegramMessage {
+public class TelegramMessage extends Message {
+    private String sourceId;
+    private String targetId;
+
+    public String getSourceId() {
+        return sourceId;
+    }
+
+    public void setSourceId(String sourceId) {
+        this.sourceId = sourceId;
+    }
+
+    public String getTargetId() {
+        return targetId;
+    }
+
+    public void setTargetId(String targetId) {
+        this.targetId = targetId;
+    }
+
+    @Override
+    public String getMessageType() {
+        return "TELEGRAM";
+    }
 }
