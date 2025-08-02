@@ -4,8 +4,10 @@ package org.example;
 import org.example.model.EmailMessage;
 import org.example.model.Message;
 import org.example.model.SmsMessage;
+import org.example.model.TelegramMessage;
 import org.example.services.EmailMessageService;
 import org.example.services.SmsMessageService;
+import org.example.services.TelegramMessageService;
 
 import java.util.Scanner;
 
@@ -58,6 +60,19 @@ public class Main {
                     emailMessage.setContent(content);
                     message = emailMessage;
                     break;
+                case 3: 
+                    TelegramMessage telegramMessage = new TelegramMessage();
+                    System.out.print("Enter source telegram id : ");
+                    source = scanner.next();
+                    telegramMessage.setSourceId(source);
+                    System.out.print("Enter target telegram id : ");
+                    target = scanner.next();
+                    telegramMessage.setTargetId(target);
+                    System.out.println("Write Your Message : ");
+                    content = scanner.next();
+                    telegramMessage.setContent(content);
+                    message = telegramMessage;
+                    break;
             }
 
             if(message instanceof SmsMessage){
@@ -66,6 +81,9 @@ public class Main {
             }else if(message instanceof EmailMessage){
                 messageService = new EmailMessageService();
                 messageService.sendEmailMessage((EmailMessage) message);
+            }else if(message instanceof TelegramMessage){
+                messageService = new TelegramMessageService();
+                messageService.sendTelegramMessage((TelegramMessage) message);
             }
 
         }while (true);
